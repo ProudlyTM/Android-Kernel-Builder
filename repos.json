@@ -1,9 +1,9 @@
 [  {
     "kernelSource": {
-      "name": "miku-KernelSU",
-      "repo": "https://github.com/PhamtomK12/kernel_xiaomi_odin",
-      "branch": "TDA",
-      "device": "odin"
+      "name": "LineageOS-KernelSU",
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm6150",
+      "branch": "lineage-20",
+      "device": "sweet"
     },
     "withKernelSU": true,
     "toolchains": [
@@ -13,8 +13,8 @@
         "name": "gas"
       },
       {
-        "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
-        "branch": "11",
+        "repo": "https://github.com/LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b",
+        "branch": "lineage-20",
         "name": "clang"
       }
     ],
