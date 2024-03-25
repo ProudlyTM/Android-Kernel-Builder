@@ -1,7 +1,7 @@
 [  {
     "kernelSource": {
       "name": "LineageOS-KernelSU",
-      "repo": "https://github.com/ProudlyTM/android_kernel_xiaomi_sm6150",
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm6150",
       "branch": "lineage-20",
       "device": "sweet"
     },
