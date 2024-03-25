@@ -21,7 +21,7 @@
         "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9",
         "branch": "android-13.0.0_r0.130",
         "name": "gcc-arm"
-      }
+      },
       {
         "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9",
         "branch": "main",
