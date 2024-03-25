@@ -1,28 +1,37 @@
 [  {
     "kernelSource": {
       "name": "LineageOS-KernelSU",
-      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm6150",
+      "repo": "https://github.com/ProudlyTM/android_kernel_xiaomi_sm6150",
       "branch": "lineage-20",
       "device": "sweet"
     },
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://android.googlesource.com/platform/prebuilts/gas/linux-x86",
-        "branch": "master",
-        "name": "gas"
+        "repo": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
+        "branch": "android-13.0.0_r0.130",
+        "name": "clang"
       },
       {
-        "repo": "https://github.com/LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b",
-        "branch": "lineage-20.0",
-        "name": "clang"
+        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
+        "branch": "android-13.0.0_r0.130",
+        "name": "gcc-aarch64"
+      },
+      {
+        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9",
+        "branch": "android-13.0.0_r0.130",
+        "name": "gcc-arm"
+      }
+      {
+        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9",
+        "branch": "main",
+        "name": "gcc-x86_64"
       }
     ],
     "params": {
       "ARCH": "arm64",
-      "CROSS_COMPILE": "aarch64-linux-gnu-",
-      "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
-      "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
+      "CROSS_COMPILE": "aarch64-linux-android-",
+      "CROSS_COMPILE_ARM32": "arm-linux-androideabi-",
       "CLANG_TRIPLE": "aarch64-linux-gnu-",
       "AR": "",
       "CC": "clang"
